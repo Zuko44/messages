@@ -14,11 +14,7 @@ const rotate = () => {
     return;
   }
 
-  if (index.value >= visible.length) {
-    index.value = 0;
-  }
-
-  currentMessage.value = visible[index.value];
+  currentMessage.value = visible[index.value % visible.length];
   index.value = (index.value + 1) % visible.length;
 };
 
@@ -94,6 +90,7 @@ function hideCurrent() {
   align-items: center;
   font-weight: 500;
   font-size: 14px;
+  color: #2B312C;
 
   button {
     color: #198754;

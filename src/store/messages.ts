@@ -26,17 +26,12 @@ export const useMessageStore = defineStore('messages', () => {
     }
   }
 
-  function toggleQueue() {
-    isQueueActive.value = !isQueueActive.value;
-  }
-
   return {
     messages,
     hiddenIds,
     isQueueActive,
     visibleMessages,
     addMessage,
-    hideMessage,
-    toggleQueue,
+    hideMessage
   };
 });
