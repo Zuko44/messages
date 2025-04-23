@@ -74,7 +74,7 @@ function hideCurrent() {
 .carousel-container {
   background-color: #E4F0ED;
   padding: 16px 20px; 
-  border-radius: 12px;
+  border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
